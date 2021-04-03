@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <title>IFT3911 DM2</title>
+      <style>
+         table
+         {
+         border: outset 2px black;
+         border-collapse: collapse;
+         }
+         th
+         {
+         border-bottom: double 2px black;
+         }
+         td
+         {
+         border-bottom: solid 1px black;
+         }
+         .first_col
+         {
+         border-right: double 2px black;
+         }
+      </style>
+   </head>
+   <body>
+      <h1 style="text-align: center;">
+         IFT 3911 - DM2
+      </h1>
+      <h2>
+         Information générale
+      </h2>
+      <p>
+         <span style="font-weight: bold;">Nom: </span>Francis Boudreau
+         <br />
+         <span style="font-weight: bold;">Matricule: </span>20124218
+         <br />
+         <span style="font-weight: bold;">Courriel: </span>frnacis.boudreau.2@umontreal.ca
+         <br />
+         <span style="font-weight: bold;">Temps mis: </span>25 heures
+      </p>
+      <p>
+         <span style="font-weight: bold;">Nom: </span>Laurence Fortin
+         <br />
+         <span style="font-weight: bold;">Matricule: </span>20088891
+         <br />
+         <span style="font-weight: bold;">Courriel: </span>laurence.fortin.3@umontreal.ca
+         <br />
+         <span style="font-weight: bold;">Temps mis: </span>25 heures
+      </p>
+      <p>
+         <span style="font-weight: bold;">Nom: </span>Julien Lanctot
+         <br />
+         <span style="font-weight: bold;">Matricule: </span>20140970
+         <br />
+         <span style="font-weight: bold;">Courriel: </span>julien.lanctot@umontreal.ca
+         <br />
+         <span style="font-weight: bold;">Temps mis: </span>25 heures
+      </p>
+      <h2>
+         Distribution des tâches
+      </h2>
+      <p>
+         <span style="font-weight: bold;">Soumetteur: </span>Laurence Fortin
+      </p>
+      <table cellpadding=7>
+         <thead>
+            <tr>
+               <th class="first_col">
+                  Tâches
+               </th>
+               <th></th>
+               <th>
+                  Francis
+               </th>
+               <th>
+                  Laurence
+               </th>
+               <th>
+                  Julien
+               </th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr >
+               <td class="first_col">
+                  Réseau de Pétri
+               </td>
+               <td>
+                  Modélisation : <br>
+                  Analyse:
+               </td>
+               <td>
+                  40% conception <br>
+                  33%
+               </td>
+               <td>
+                  40% conception <br>
+                  33%
+               </td>
+               <td>
+                  20% conception <br>
+                  33%
+               </td>
+            </tr>
+            <tr>
+               <td class="first_col">
+                  Statechart
+               </td>
+               <td>
+                  Modélisation : <br>
+                  Génération code:
+               </td>
+               <td>
+                  20% (révision)<br>
+                  30% (résolution bug)
+               </td>
+               <td>
+                  25% (conception & revision) <br>
+                  30% (résolution bug)
+               </td>
+               <td>
+                  45% (conception)<br>
+                  40% (conception)
+               </td>
+            </tr>
+            <tr>
+               <td class="first_col">
+                  Design logiciel
+               </td>
+               <td>
+                  Diagramme classe : <br>
+                  Diagramme séquence : <br>
+                  Diagramme paquets : <br>
+                  Diagramme OCL : <br>
+                  Modules réutulisables :
+               </td>
+               <td>
+                  20% (revision)<br>
+                  40% (conception)<br>
+                  30% (revision)<br>
+                  60% (conception)<br>
+                  33% (redaction)
+               </td>
+               <td>
+                  40% (conception)<br>
+                  30% (conception et revision)<br>
+                  45% (conception)<br>
+                  10% (revision)<br>
+                  33% (redaction)
+               </td>
+               <td>
+                  40% (conception)<br>
+                  30% (revision)<br>
+                  35% (conception)<br>
+                  20% (revision)<br>
+                  33% (redaction)
+               </td>
+            </tr>
+            <tr>
+               <td class="first_col">
+                  Qualité du design
+               <td>
+                  Couplage et cohésion<br>
+                  Fardeau des classes:<br>
+                  Graphe IA: <br>
+                  Justification:
+               </td>
+               <td>
+                  25% (revision)<br>
+                  33% (calcul)<br>
+                  33% (conception)<br>
+                  33% (conception et revision)
+               </td>
+               <td>
+                  35% (redaction)<br>
+                  33% (calcul)<br>
+                  33% (conception)<br>
+                  33% (conception et revision)
+               </td>
+               <td>
+                  35% (redaction)<br>
+                  33% (calcul)<br>
+                  33% (conception)<br>
+                  33% (conception et revision)
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <h1>Hypothèses</h1>
+      <h1>Réseau de Pétri</h1>
+      <h2>
+         Modélisation du réseau de Pétri
+      </h2>
+      <img src="./ReseauDePetri/petri.png"  alt="petri" /><br><br>
+      Voici un <a href="./ReseauDePetri/petri_final.xml">lien</a> vers le fichier pipe du réseau de pétri.
+      <h2>Analyse du réseau de Pétri</h2>
+      <p><strong>-Conservation-</strong><br>
+M(Voie disponible -> Sud) + M(voie disponible -> nord) = 1<br><br>
+
+Ainsi, comme j'ai un seul processeur, qui correspond à la lumière dans notre situation, une seule voiture peut etre dans le tunnel à la fois.
+<br><br>
+<strong>-Graphe de couverture-</strong><br>
+À chaque transition d'une voiture à la sortie du tunnel, les places disponible s'interchangent, comme expliqué ci-dessus.
+Le graphe de couverture nous le confirme, jamais il n'y a d'état où les deux places Tunnels contiennent tous deux un jetons.
+Jamais il ne contiennent une voiture en même temps.<br>
+De plus on remarque clairement dans le graphe que les deux transitions "sortir" activent la transition entrer de la voie opposée. Le processus est donc équitable, puisqu'une voiture qui passe dans une voie, provoque le fait qu'une voiture passera dans l'autre. Ainsi, la famine est impossible dans ce réseau.</p>
+      <h1>Statechart</h1>
+      <h2>
+         Modélisation du Statechart
+      </h2>
+      <img src="./StateChart/microwave.png"  alt="Statechart"  width="1300" height="1200"/><br><br>
+      Voici un <a href="./StateChart/microwave.sct">lien</a> vers le fichier sct du Statechart.
+      <h2> Génération du code et application fonctionnelle </h2>
+      <h1>Design logiciel</h1>
+      <h2> Révision du diagramme de classe</h2>
+      <img src="./Design/images/classes.jpg"  alt="diagrammeClasse"  width="1500" height="900"/><br><br>
+      Voici un <a href="./Design/TP2_UML.vpp">lien</a> vers le fichier vpp du diagramme.
+      <h2>Révision des diagrammes de séquence ou de collaboration </h2>
+      <h3>
+         Ajouter
+      </h3>
+      <img src="./Design/images/AjoutDSS.jpg"  alt="DSS_AJOUTER"  width="500" height="500"/><br><br>
+      Voici un <a href="./Design/DSS/AjoutDSS.vpp">lien</a> vers le fichier vpp du diagramme.
+      <h3>
+         Modifier
+      </h3>
+      <img src="./Design/images/ModificationDSS.jpg"  alt="DSS_MODIF"  width="500" height="500"/><br><br>
+      Voici un <a href="./Design/DSS/ModificationDSS.vpp">lien</a> vers le fichier vpp du diagramme.
+      <h3>
+         Supprimer
+      </h3>
+      <img src="./Design/images/SuppressionDSS.jpg"  alt="DSS_SUPRESSION"  width="600" height="500"/><br><br>
+      Voici un <a href="./Design/DSS/SuppressionDSS.vpp">lien</a> vers le fichier vpp du diagramme.
+      <h3>
+         Rechercher
+      </h3>
+      <img src="./Design/images/RechercherDSS.jpg"  alt="DSS_RECHERCHER"  width="600" height="500"/><br><br>
+      Voici un <a href="./Design/DSS/RechercherDSS.vpp">lien</a> vers le fichier vpp du diagramme.
+      <h3>
+         Reserver
+      </h3>
+      <img src="./Design/images/ReserverDSS.jpg"  alt="DSS_RESERVER"  width="800" height="500"/><br><br>
+      Voici un <a href="./Design/DSS/ReserverDSS.vpp">lien</a> vers le fichier vpp du diagramme
+      <h3>
+         Confirmer
+      </h3>
+      <img src="./Design/images/ConfirmationDSS.jpg"  alt="DSS_CONFIRMER"  width="500" height="500"/><br><br>
+      Voici un <a href="./Design/DSS/ConfirmationDSS.vpp">lien</a> vers le fichier vpp du diagramme.
+      <h2>Révision du diagramme de paquets</h2>
+      <img src="./Design/images/paquets.jpg"  alt="paquetdiagrame"  width="800" height="500"/><br><br>
+      Voici un <a href="./Design/paquets.vpp">lien</a> vers le fichier vpp du diagramme.
+      <h2>Révision des contraintes OCL</h2>
+
+<p> <strong>Context Compagnie</strong><br>
+inv: self.id.Length() < 6<br>
+context Compagnie::id : String<br>
+init:Compagnie::uniqueID() <br><br>
+
+<strong>Context Voyage</strong><br>
+inv: self.DateDepart < self.DateArrivee<br>
+inv: self.HeureDepart < self.HeureArrivee<br><br>
+<strong>Context Vol</strong><br>
+inv: self.EndroitDepart <> self.EndroitArrivee<br>
+context Vol::id : String <br>
+init:Compagnie::uniqueID()<br><br>
+<strong>Context Avion</strong><br>
+inv: self.rangee <= 100<br>
+inv: self.colonne <= 10<br><br>
+<strong>Context Port </strong><br>
+inv: self.id.Length() < 6<br>
+context Port::id : String <br>
+init:Port::uniqueID()<br><br>
+<strong>Context Siege</strong><br>
+inv: Siege.allInstances()->forAll(c1,c2|c1.section = c2.section implies c1.taux = c2.taux)<br>
+inv: Siege.paid and Siege.contains(Reservation) implies siege.contains(Confirmation)<br>
+context Siege::reserver(a : client)<br>
+pre: self.contains(Reservation) -> excludes(a)<br>
+post : reserver(a) implies self.contains(Reservation)<br>
+context siege::confirmer(a : client)<br>
+pre: not(self.contains(Reservation ) and self.Reservation.Contains(a)) -> excludes(a)<br>
+post : self.contains(Confirmation) and self.Confirmation.Contains(a)<br><br>
+<strong>Context Gare </strong><br>
+inv: self.id.Length() < 3<br>
+context Gare::id : String <br>
+init:Gare::uniqueID()<br><br>
+<strong>Context Croisiere</strong><br>
+inv: (self.DateArrivee - self.DateDepart) < 21<br>
+inv: self.ArraylistPort.Last() = self.EndroitDepartbr><br><br>
+<strong>Context Paquebot</strong><br>
+inv: Paquebot.allInstances()->forAll(e1,e2|e1<>e2 implies e1.DateArrivee <> e2.DateArrivee and e1.DateDepart <> e2.DateDepart<br>
+
+      </p>
+      <h2>Identification des modules réutilisables</h2>
+      <P>Les modules réutilisables de notre conception sont toutes nos  <strong>(Institution, Voyage, Compagnie, Vehicule, Reservation, Confirmation, Gestionnaire)</strong>, ainsi que toutes nos éumerations <strong>(typeSection, TypeCabine)</strong>
+         <br> Les modules sont réutilisables puisqu'ils modélisent de manière simple les entités utilisés dans ce devoir.  Par exemple, si on voudrait ajouter un nouveau type de voyage (spatial, rêvons!), nous aurions déjà notre base (interface du Voyage) et on aurait simplement à rajouter ce qu'il manque dans une classe qui l'implémente.  Ce type d'exemple est applicable à toutes les interfaces, ce qui facilite évidemment la réutilisation.
+      <p>
+      <h1>Qualité du design</h1>
+      <h2>Discussion du couplage et de la cohésion des modules </h2>
+      <p> Notre 1ere itération du diagramme de classes contenaient beaucoup de problème de couplage, plus précisément, beaucoup de classes qui auraient pu être implémentées en tant qu'interface </p>
+      <p> Notre 2eme itération règle la majorité de ces problèmes, ajoutant des interfaces à pratiquement toutes les classes qui pouvaient en avoir.  Cela réduit énormément le couplage, puisque, par exemple, notre 1er diagramme contenait des véhicules individuels pour chaque type de voyage, alors que maintenant, un voyage est associé à un véhicule, une nouvelle interface ajoutée lors de notre 2eme itération.  Il en est pareil pour les réservations, confirmations, compagnies, etc</p>
+      <p> La cohésion fut également améliorée par l'ajout de gestionnaires individuels qui se chargent d'effectuer les opérations des admins sur les différents modules.  Notre 1ere itération déléguait plutôt toutes ces taches au système, augmentant ainsi énormément le couplage tout en réduisant la cohésion : pourquoi est-ce que le système effectuerait toutes les modifications, alors qu'une modification de compagnie est très différente d'une modification de voyage par exemple ?  L'ajout de modules de différents pour chaque type d'entité aide à éliminer ce problème.</p>
+      <h2> Discussion du fardeau des classes </h2>
+      <p> 
+	  En regardant le diagramme de classe complété plus haut, on peut en déduire les conclusions suivantes par rapport au fardeau:<br>
+	  Nos classes ont un fardeau bien équilibré.<br>
+	  Autant celles qui sont proches de classes concrètes ont peu de dépendance, donc sont près de la fondation.<br>
+		Celles qui sont plus abstraite, donc les gestionnaires et autres constructions relative au système, on un fardeau plus élevés car leur fonctionnement dépend de l'implémentation des classes concrètes.<br>
+	  </p>
+      <h2>Graphe IA et justification</h2>
+	  <img src="./Design/Graphe_IA.png""  alt="GRAPHEIA"  width="500" height="500"/><br><br>
+	  
+      <p> Pour construire le graphe IA, il faut tout d'abord calculer l'abstraction de nos paquet A = nA/nC <br>
+	  donc GUI = 0/3=0, Compagnie = 1/4, Voyage = 2/6, Gestionnaire = 1/7, Véhicule = 1/5, Institution = 0/3 = 0 , Confirmation = 2/5.<br>
+	  Ensuite nous avons calculé les I. GUI = 1, Compagnie = 1/2, Voyage = 1/3, Gestionnaire = 1/6, Véhicule = 2/3, Institution = 1/2 , Confirmation = 2/3.<br>
+	  On peut remarquer une tendance vers le bas, ce qui semble indiqué une bonne conception. Par contre, remarquons que si on enlève le point GUI, la tendance est plûtot à la hausse.<br>
+	  En effet, nos classes sont en majorité plus abstraites que instables. Il faudrait donc, dans une révision ultérieure, effectuer des changements pour réduire notre abstraction. <br>
+	  Par contre, ce changement était trop majeur pour être effectué ici.<br>
+	  Une telle révision aurait essentiellement nécessité de recommencer à zéro.</p>
+      <h2>Justification de l'application des principes de conception</h2>
+      <p> <strong>ISP :</strong> Nous avons rajouté plusieurs interfaces pour des entités similaires, mais nous avons gardé les interfaces avec les attributs les plus de bases possible.  Donc, chaque classe qui implémente une interface utilisera toujours les attributs/méthodes de cette interface, car les interfaces n'ont que les attributs/méthodes communes aux classes qui les implémentent.</p>
+	  <p><strong> CRP : </strong>Nous avons ajouter des gestionnaires qui gèrent les opérations individuelles sur chacunes des entités.  Avant, le système gèrait tout, alors que la modification d'un voyage ,par exemple, n'est pas du tout la même que celle d'une compagnie.  Avec plusieurs gestionnaires, on favorise la délégation plutôt que l'héritage. </p>
+	  <p> <strong>DIP :</strong> Nos classes concretes changent souvent, mais les interfaces ne changent pratiquement pas.Par exemple, dans notre diagramme de clsse, notre premiere iteration notre Systeme faisait la majorité des operations. Dans la seconde version, nous avons ajouter des interfaces qui sont maintenant en charge de la majorité des opérations. Le systeme est simplement utiliser pour appeler le main alors qu'il etait un blob dans notre premiere version. </p>
+   </body>
+</html>
