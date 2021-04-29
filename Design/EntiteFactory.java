@@ -4,7 +4,7 @@ public class EntiteFactory {
 	 * 
 	 * @param EntityType
 	 */
-	public Entity create(int EntityType) {
+	public AbstractEntity create(AbstractEntity EntityType) {
 		// TODO - implement EntiteFactory.create
 		throw new UnsupportedOperationException();
 	}

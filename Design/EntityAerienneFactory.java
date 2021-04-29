@@ -1,12 +1,12 @@
 public class EntityAerienneFactory extends EntiteFactory {
 
-	private EntityAerieneFactory instance;
+	private EntityAerienneFactory instance;
 
 	/**
 	 * 
 	 * @param EntityType
 	 */
-	public Entity create(int EntityType) {
+	public AbstractEntity create(AbstractEntity EntityType) {
 		// TODO - implement EntityAerienneFactory.create
 		throw new UnsupportedOperationException();
 	}

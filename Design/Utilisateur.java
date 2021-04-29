@@ -1,6 +1,6 @@
 public interface Utilisateur {
 
-	string identifiant = "";
-	string MDP = "";
+	String identifiant = "";
+	String MDP = "";
 
 }

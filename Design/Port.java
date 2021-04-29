@@ -1,2 +1,2 @@
-public class Port extends AbstractInfractucture {
+public class Port extends AbstractInfrastructure {
 }

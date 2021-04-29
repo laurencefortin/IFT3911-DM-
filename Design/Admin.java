@@ -1,4 +1,4 @@
-import Utilisateur.*;
 
-public class Admin implements MDP {
+
+public class Admin implements Utilisateur {
 }

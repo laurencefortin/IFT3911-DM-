@@ -1,21 +1,21 @@
 public class AjoutFerroviaire extends Ajout {
 
-	public Compagnie executeAjoutCompagnie() {
+	public CompagnieFeroviaire executeAjoutCompagnie() {
 		// TODO - implement AjoutFerroviaire.executeAjoutCompagnie
 		throw new UnsupportedOperationException();
 	}
 
-	public Vehicule executeAjoutVehicule() {
+	public Train executeAjoutVehicule() {
 		// TODO - implement AjoutFerroviaire.executeAjoutVehicule
 		throw new UnsupportedOperationException();
 	}
 
-	public Infrastructure executeAjoutInfrastructure() {
+	public Gare executeAjoutInfrastructure() {
 		// TODO - implement AjoutFerroviaire.executeAjoutInfrastructure
 		throw new UnsupportedOperationException();
 	}
 
-	public Depart executeAjoutDepart() {
+	public Itineraire executeAjoutDepart() {
 		// TODO - implement AjoutFerroviaire.executeAjoutDepart
 		throw new UnsupportedOperationException();
 	}

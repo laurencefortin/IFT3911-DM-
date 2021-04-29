@@ -1,2 +1,2 @@
-public class Aeroport extends AbstractInfractucture {
+public class Aeroport extends AbstractInfrastructure {
 }

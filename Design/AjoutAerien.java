@@ -1,21 +1,21 @@
 public class AjoutAerien extends Ajout {
 
-	public Compagnie executeAjoutCompagnie() {
+	public CompagnieAerienne executeAjoutCompagnie() {
 		// TODO - implement AjoutAerien.executeAjoutCompagnie
 		throw new UnsupportedOperationException();
 	}
 
-	public Vehicule executeAjoutVehicule() {
+	public Avion executeAjoutVehicule() {
 		// TODO - implement AjoutAerien.executeAjoutVehicule
 		throw new UnsupportedOperationException();
 	}
 
-	public Infrastructure executeAjoutInfrastructure() {
+	public Aeroport executeAjoutInfrastructure() {
 		// TODO - implement AjoutAerien.executeAjoutInfrastructure
 		throw new UnsupportedOperationException();
 	}
 
-	public Depart executeAjoutDepart() {
+	public Vol executeAjoutDepart() {
 		// TODO - implement AjoutAerien.executeAjoutDepart
 		throw new UnsupportedOperationException();
 	}

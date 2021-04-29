@@ -6,7 +6,7 @@ public class EntityFerroviaireFactory extends EntiteFactory {
 	 * 
 	 * @param EntityType
 	 */
-	public Entity create(int EntityType) {
+	public AbstractEntity create(AbstractEntity EntityType) {
 		// TODO - implement EntityFerroviaireFactory.create
 		throw new UnsupportedOperationException();
 	}

@@ -6,7 +6,7 @@ public class EntityNavaleFactory extends EntiteFactory {
 	 * 
 	 * @param EntityType
 	 */
-	public Entity create(int EntityType) {
+	public AbstractEntity create(AbstractEntity EntityType) {
 		// TODO - implement EntityNavaleFactory.create
 		throw new UnsupportedOperationException();
 	}

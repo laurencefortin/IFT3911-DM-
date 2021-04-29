@@ -1,6 +1,8 @@
+import java.util.ArrayList;
+
 public class Itineraire extends AbstractDepart {
 
-	private arrayList<gare> ListeGares;
-	private string EndroitArivee;
+	private ArrayList<Gare> ListeGares;
+	private String EndroitArivee;
 
 }

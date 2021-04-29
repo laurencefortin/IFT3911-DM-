@@ -1,5 +1,7 @@
+import java.util.ArrayList;
+
 public interface Menu {
 
-	arrayList<String> ListeMenu = new arrayList<String>();
+	ArrayList<String> ListeMenu = new ArrayList<String>();
 
 }

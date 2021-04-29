@@ -1,4 +1,3 @@
-import Utilisateur.*;
 
-public class Client implements identifiant {
+public class Client implements Utilisateur {
 }

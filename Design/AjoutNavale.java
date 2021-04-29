@@ -1,21 +1,21 @@
 public class AjoutNavale extends Ajout {
 
-	public Compagnie executeAjoutCompagnie() {
+	public CompagnieNavale executeAjoutCompagnie() {
 		// TODO - implement AjoutNavale.executeAjoutCompagnie
 		throw new UnsupportedOperationException();
 	}
 
-	public Vehicule executeAjoutVehicule() {
+	public Bateau executeAjoutVehicule() {
 		// TODO - implement AjoutNavale.executeAjoutVehicule
 		throw new UnsupportedOperationException();
 	}
 
-	public Infrastructure executeAjoutInfrastructure() {
+	public Port executeAjoutInfrastructure() {
 		// TODO - implement AjoutNavale.executeAjoutInfrastructure
 		throw new UnsupportedOperationException();
 	}
 
-	public Depart executeAjoutDepart() {
+	public Croisiere executeAjoutDepart() {
 		// TODO - implement AjoutNavale.executeAjoutDepart
 		throw new UnsupportedOperationException();
 	}

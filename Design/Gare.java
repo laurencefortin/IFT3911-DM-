@@ -1,2 +1,2 @@
-public class Gare extends AbstractInfractucture {
+public class Gare extends AbstractInfrastructure {
 }
