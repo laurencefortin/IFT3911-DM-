@@ -1,5 +1,7 @@
 public class AbstractVehicule {
 
-	private String id;
-
+	public String id;
+	public AbstractVehicule(String id) {
+		this.id = id;
+	}
 }

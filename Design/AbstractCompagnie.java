@@ -1,5 +1,7 @@
 public abstract class AbstractCompagnie {
 
-	private String id;
-
+	public String id;
+	public AbstractCompagnie(String id) {
+		this.id = id;
+	}
 }

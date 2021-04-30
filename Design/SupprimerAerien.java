@@ -1,8 +1,14 @@
+import java.util.Scanner;
+
 public class SupprimerAerien extends Supprimer {
 
-	public void executeSupprimerCompagnie() {
-		// TODO - implement SupprimerAerien.executeSupprimerCompagnie
-		throw new UnsupportedOperationException();
+	public void executeSupprimerCompagnie()) {
+		System.out.println("Veuillez entrer l'id de la compagnie à supprimer");
+		Scanner scanner = new Scanner(System.in);
+		String id = scanner.nextLine();
+		CompagnieAerienne compagnie = new CompagnieAerienne(id);
+		scanner.close();
+		return compagnie;
 	}
 
 	public void executeSupprimerVehicule() {
